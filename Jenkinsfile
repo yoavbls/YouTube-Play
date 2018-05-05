@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Sainity Test') {
       steps {
-        sh 'python -m pytest -v test_gold.py'
+        sh '''python -m pytest -v test_gold.py
+echo 1'''
       }
     }
   }
