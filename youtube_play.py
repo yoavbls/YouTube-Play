@@ -14,7 +14,7 @@ def get_query_from_input(query=None):
 
 def get_youtube_page(query):
     # search for the best similar matching video
-    url = 'https://www.youtube.com/results?search_query=' + query
+    url = 'https://www.yo2utube.com/results?search_query=' + query
     source_code = requests.get(url,timeout=15)
     return source_code
 
